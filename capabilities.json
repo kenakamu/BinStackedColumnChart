@@ -1,0 +1,129 @@
+{
+    "sorting": {
+        "default": {}
+    },
+    "supportsHighlight": true,
+    "dataRoles": [
+        {
+            "displayName": "Axis",
+            "displayNameKey": "AxisDisplayNameKey",
+            "name": "axis",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Legend",
+            "displayNameKey": "LegendDisplayNameKey",
+            "name": "legend",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Measure",
+            "displayNameKey": "MeasureDisplayNameKey",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "xAxis": {
+            "displayName": "X Axis",
+            "displayNameKey": "XAxisDisplayNameKey",
+            "properties": {
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "displayNameKey": "FontSizeDisplayNameKey",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        },
+        "yAxis": {
+            "displayName": "Y Axis",
+            "displayNameKey": "YAxisDisplayNameKey",
+            "properties": {
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "displayNameKey": "FontSizeDisplayNameKey",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        },
+        "bin": {
+            "displayName": "Bin Settings",
+            "displayNameKey": "BinSettingsDisplayNameKey",
+            "properties": {
+                "useSameColor": {
+                    "displayName": "Use same color for selected items",
+                    "displayNameKey": "UseSameColorDisplayNameKey",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "displayNameKey": "FillDisplayNameKey",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "displayNameKey": "FontSizeDisplayNameKey",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "axis": {
+                        "max": 1
+                    },
+                    "legend": {
+                        "max": 1
+                    },
+                    "measure": {
+                        "max": 1
+                    }
+                }
+            ],
+            "matrix": {
+                "rows": {
+                    "for": {
+                        "in": "axis"
+                    }
+                },
+                "columns": {
+                    "for": {
+                        "in": "legend"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "measure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

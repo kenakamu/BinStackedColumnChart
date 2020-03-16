@@ -1,0 +1,22 @@
+{
+    "visual": {
+        "name": "BinStackedColumnChart",
+        "displayName": "Bin Stacked Column Chart",
+        "guid": "myStackColChartE1352AD9FF224912B0DA8D9A6DD03E33",
+        "visualClassName": "Visual",
+        "version": "0.1.0",
+        "description": "A Bin Stacked Column Chart makes it easier to see selected items and non-selected items ratio by makes same color for each items.",
+        "supportUrl": "http://community.powerbi.com",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "2.6.0",
+    "author": {
+        "name": "kenakamu",
+        "email": "kenakamu@microsoft.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json"
+}

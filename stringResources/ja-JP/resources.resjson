@@ -1,0 +1,11 @@
+{
+    "AxisDisplayNameKey": "軸",
+    "LegendDisplayNameKey": "凡例",
+    "MeasureDisplayNameKey": "値",
+    "FontSizeDisplayNameKey":"フォントサイズ",
+    "FillDisplayNameKey":"色",
+    "UseSameColorDisplayNameKey":"選択したアイテムで同じ色を使う",
+    "XAxisDisplayNameKey":"X 軸",
+    "YAxisDisplayNameKey":"Y 軸",
+    "BinSettingsDisplayNameKey":"アイテム分け設定"
+}
